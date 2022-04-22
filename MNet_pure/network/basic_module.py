@@ -54,7 +54,7 @@ class BasicNet(nn.Module):
     activation_kwargs = {'negative_slope': 1e-2, 'inplace': True}
 
     def __init__(self):
-        super(BaseNet, self).__init__()
+        super(BasicNet, self).__init__()
 
     def parameter_count(self):
         print("model have {} paramerters in total".format(sum(x.numel() for x in self.parameters()) / 1e6))
