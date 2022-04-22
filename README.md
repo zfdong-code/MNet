@@ -5,5 +5,5 @@ The proposed MNet is trained with nnUNet framework, thus we provide the whole mo
 ## MNet_pure
 The pure version of MNet. This is recommended if you would like to insert MNet into your own training framework.
 
-<img src="https://github.com/zfdong-code/MNet/blob/main/MNet.png" width="800px"> 
+<img src="https://github.com/zfdong-code/MNet/blob/main/MNet.jpg" width="800px"> 
 
