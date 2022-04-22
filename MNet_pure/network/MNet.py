@@ -21,7 +21,7 @@ def FMU(x1, x2, mode='sub'):
         raise Exception('Unexpected mode')
 
 
-class Down(BaseNet):
+class Down(BasicNet):
     def __init__(self, in_channels, out_channels, mode: tuple, FMU='sub', downsample=True, min_z=8):
         """
         basic module at downsampling stage
@@ -81,7 +81,7 @@ class Down(BaseNet):
 
 
 
-class Up(BaseNet):
+class Up(BasicNet):
     def __init__(self, in_channels, out_channels, mode: tuple, FMU='cat'):
         """
         basic module at upsampling stage
@@ -125,7 +125,7 @@ class Up(BaseNet):
 
 
 
-class MNet(BaseNet):
+class MNet(BasicNet):
     def __init__(self, in_channels, num_classes, kn=(32, 48, 64, 80, 96), ds=True, FMU='sub'):
         """
 
