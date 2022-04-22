@@ -3,4 +3,4 @@
 The proposed MNet is trained with nnUNet framework, thus we provide the whole modified nnUNet project.
 
 ## MNet_pure
-The pure version of MNet.
+The pure version of MNet. This is recommended if you would like to insert MNet into your own training framework.
