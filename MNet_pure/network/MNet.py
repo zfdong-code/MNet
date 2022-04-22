@@ -135,7 +135,6 @@ class MNet(BasicNet):
             kn: the number of kernels
             ds: deep supervision
             FMU: type of feature merging unit
-            output_mode:
         """
         super().__init__()
         self.ds = ds
