@@ -208,6 +208,7 @@ class MNet(BasicNet):
         up21 = self.up21([bottleNeck2[0], down23[0], bottleNeck3[1], down23[1]])
         up22 = self.up22([up21[0], down22[0], up31[1], down22[1]])
         up23 = self.up23([up22[0], down21[0], up32, down21[1]])
+        
         up11 = self.up11([bottleNeck1, down14[0], bottleNeck2[1], down14[1]])
         up12 = self.up12([up11, down13[0], up21[1], down13[1]])
         up13 = self.up13([up12, down12[0], up22[1], down12[1]])
