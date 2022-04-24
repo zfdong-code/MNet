@@ -82,7 +82,7 @@ class Down(BasicNet):
 
 
 class Up(BasicNet):
-    def __init__(self, in_channels, out_channels, mode: tuple, FMU='cat'):
+    def __init__(self, in_channels, out_channels, mode: tuple, FMU='sub'):
         """
         basic module at upsampling stage
         Args:
