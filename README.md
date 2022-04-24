@@ -5,7 +5,7 @@ The proposed MNet is trained with nnUNet framework, thus we provide the whole mo
 ## MNet_pure
 We also provide the pure version of MNet. This is recommended if you would like to insert MNet into your own training framework. 
 
-MNet implemented with MindSpore (https://www.mindspore.cn/) will available soon.
+MNet implemented with MindSpore (https://www.mindspore.cn/) will be available soon.
 
 
 
