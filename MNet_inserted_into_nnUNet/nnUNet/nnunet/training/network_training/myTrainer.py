@@ -74,14 +74,14 @@ class myTrainer(nnUNetTrainer):
             self.setup_DA_params()
 
             #====================deep supervision setting
-            print('===============:',self.patch_size)
+            print('===============:',self.patch_size) # (z, x, y)
             if self.patch_size[0] >= 32:
                 z_scale = [0.5, 0.25, 0.125]
             elif self.patch_size[0] >=16:
                 z_scale = [0.5, 0.25, 0.25]
             elif self.patch_size[0] >= 8:
                 z_scale = [0.5, 0.5, 0.5]
-            else: # if z_scale < 8, maxpooling will not be applied along z-axis
+            else: # if z_size < 8, maxpooling will not be applied along z-axis
                 z_scale = [1,1,1]
             self.deep_supervision_scales = [[1, 1, 1], [z_scale[0], 0.5, 0.5], [1, 0.5, 0.5], [z_scale[1], 0.25, 0.25], [1, 0.25, 0.25],
                                          [z_scale[2], 0.125, 0.125], [1, 0.125, 0.125]]
