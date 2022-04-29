@@ -1,11 +1,24 @@
 # MNet
+
+## MNet
+Implementations of MNet with MindSpore (https://www.mindspore.cn/) and PyTorch. 
+
+
+
 ## MNet_inserted_into_nnUNet
-The proposed MNet is trained with nnUNet framework, thus we provide the whole modified nnUNet project.
+The proposed MNet is trained with nnUNet framework (https://github.com/MIC-DKFZ/nnUNet), thus we provide the whole modified nnUNet project.
 
-## MNet_pure
-We also provide the pure version of MNet. This is recommended if you would like to insert MNet into your own training framework. 
+Modifications we have done:
+1) Add MNet.py and basic_module.py to /nnUNet/nnunet/network_architecture
+2) Add myTrainer.py to /nnUNet/nnunet/training/network_training. 
 
-MNet implemented with MindSpore (https://www.mindspore.cn/) will be available soon.
+
+Original training command: nnUNet_train 3d_fullres nnUNetTrainerV2 TaskXXX_MYTASK FOLD --npz
+Current training command:  nnUNet_train 3d_fullres myTrainer TaskXXX_MYTASK FOLD --npz
+
+
+
+
 
 
 
