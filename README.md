@@ -3,8 +3,6 @@
 ## MNet_pure
 Implementations of MNet with MindSpore (https://www.mindspore.cn/) and PyTorch. 
 
-\\
-\\
 
 ## MNet_inserted_into_nnUNet
 The proposed MNet is trained with nnUNet framework (https://github.com/MIC-DKFZ/nnUNet), thus we provide the whole modified nnUNet project.
