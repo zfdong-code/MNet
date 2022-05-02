@@ -27,4 +27,8 @@ nnUNet_train 3d_fullres myTrainer TaskXXX_MYTASK FOLD --npz (see https://github.
 
 # Dataset
 
+1. LiTS: https://competitions.codalab.org/competitions/17094#learn_the_details-evaluation
+2. KiTS: https://kits19.grand-challenge.org/data/
+3. BraTS: https://www.kaggle.com/datasets/awsaf49/brats2020-training-data
+4. PROMISE: https://promise12.grand-challenge.org/
 
