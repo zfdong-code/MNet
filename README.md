@@ -1,5 +1,3 @@
-# MNet
-
 ## MNet_pure
 Implementations of MNet with MindSpore (https://www.mindspore.cn/) and PyTorch. 
 
