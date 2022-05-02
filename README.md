@@ -14,7 +14,7 @@ Modifications we have done:
 (You can insert most end-to-end networks into nnUNet like the way we did)
 
 Training cmd:
-**nnUNet_train 3d_fullres myTrainer TaskXXX_MYTASK FOLD --npz ** (see https://github.com/MIC-DKFZ/nnUNet for details)
+nnUNet_train 3d_fullres myTrainer TaskXXX_MYTASK FOLD --npz (see https://github.com/MIC-DKFZ/nnUNet for details)
 
 
 
