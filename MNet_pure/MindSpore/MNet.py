@@ -97,29 +97,22 @@ class Down(nn.Cell):
             if self.mode_in == 'both':
                 x2d, x3d = x
 
-
                 p2d = ops.MaxPool3D(kernel_size=(1,2,2), strides=(1,2,2), pad_mode="valid")(x2d)
-                # p2d = F.max_pool3d(x2d, kernel_size=(1, 2, 2), stride=(1, 2, 2))
+
                 if x3d.shape[2] >= self.min_z:
                     p3d = ops.MaxPool3D(kernel_size=(2, 2, 2), strides=(2, 2, 2))(x3d)
-                    # p3d = F.max_pool3d(x3d, kernel_size=(2, 2, 2), stride=(2, 2, 2))
                 else:
                     p3d = ops.MaxPool3D(kernel_size=(1, 2, 2), strides=(1, 2, 2))(x3d)
-                    # p3d = F.max_pool3d(x3d, kernel_size=(1, 2, 2), stride=(1, 2, 2))
 
                 x = FMU(p2d, p3d, mode=self.FMU)
 
             elif self.mode_in == '2d':
                 x = ops.MaxPool3D(kernel_size=(1, 2, 2), strides=(1, 2, 2))(x)
-                # x = F.max_pool3d(x, kernel_size=(1, 2, 2), stride=(1, 2, 2))
-
             elif self.mode_in == '3d':
                 if x.shape[2] >= self.min_z:
                     x = ops.MaxPool3D(kernel_size=(2, 2, 2), strides=(2, 2, 2))(x)
-                    # x = F.max_pool3d(x, kernel_size=(2, 2, 2), stride=(2, 2, 2))
                 else:
                     x = ops.MaxPool3D(kernel_size=(1, 2, 2), strides=(1, 2, 2))(x)
-                    # x = F.max_pool3d(x, kernel_size=(1, 2, 2), stride=(1, 2, 2))
 
         if self.mode_out == '2d':
             return self.CB2d(x)
