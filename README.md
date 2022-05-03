@@ -1,3 +1,10 @@
+#MNet: Rethinking 2D/3D Networks for Anisotropic Medical Image Segmentation
+
+MNet is novel data-independent CNN segmentation architecture, which realizes adaptive 2D/3D path selection, thus being robust to varying anisotropic degrees of medical datasets.
+
+
+X
+
 ## MNet_pure
 Implementations of MNet with MindSpore (https://www.mindspore.cn/) and PyTorch. 
 
