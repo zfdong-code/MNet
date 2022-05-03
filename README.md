@@ -2,17 +2,21 @@
 
 MNet is novel data-independent CNN segmentation architecture, which realizes flexible 2D/3D path selection, balancing inter- and intra-slice representation adaptively, thus being robust to varying anisotropic degrees of medical datasets and helping get rid of manual architecture design.
 
+For more information about MNet, please read the following paper: available soon
 
-## Paper
-MNet: Rethinking 2D/3D Networks for Anisotropic Medical Image Segmentation
 
-## Code
-### MNet_pure
+
+--citation: available soon
+
+
+
+
+## MNet_pure
 Implementations of MNet with MindSpore (https://www.mindspore.cn/) and PyTorch. 
 
 
 
-### MNet_inserted_into_nnUNet
+## MNet_inserted_into_nnUNet
 The proposed MNet is trained with nnUNet framework (https://github.com/MIC-DKFZ/nnUNet), thus we provide the whole modified nnUNet project. 
 
 --Modifications we have done:
@@ -22,7 +26,7 @@ The proposed MNet is trained with nnUNet framework (https://github.com/MIC-DKFZ/
 (You can insert most end-to-end networks into nnUNet like the way we did)
 
 --Training cmd:
-nnUNet_train 3d_fullres myTrainer TaskXXX_MYTASK FOLD --npz (see https://github.com/MIC-DKFZ/nnUNet for details)
+nnUNet_train 3d_fullres **myTrainer** TaskXXX_MYTASK FOLD --npz (see https://github.com/MIC-DKFZ/nnUNet for details)
 
 
 
