@@ -23,7 +23,6 @@ The proposed MNet is trained with nnUNet framework (https://github.com/MIC-DKFZ/
 1) Add MNet.py and basic_module.py to **/nnUNet/nnunet/network_architecture**
 2) Add myTrainer.py to **/nnUNet/nnunet/training/network_training**
 
-(You can insert most end-to-end networks into nnUNet like the way we did)
 
 --Training cmd:
 nnUNet_train 3d_fullres **myTrainer** TaskXXX_MYTASK FOLD --npz (see https://github.com/MIC-DKFZ/nnUNet for details)
