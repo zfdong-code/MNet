@@ -6,9 +6,10 @@ import torch.nn.functional as F
 class CNA3d(nn.Module): # conv + norm + activation
     def __init__(self, in_channels, out_channels, kSize, stride, padding=(1,1,1), bias=True, norm_args=None, activation_args=None):
         super().__init__()
-        self.conv = nn.Conv3d(in_channels, out_channels, kernel_size=kSize, stride=stride, padding=padding, bias=bias)
         self.norm_args = norm_args
         self.activation_args = activation_args
+        
+        self.conv = nn.Conv3d(in_channels, out_channels, kernel_size=kSize, stride=stride, padding=padding, bias=bias)
 
         if norm_args is not None:
             self.norm = nn.InstanceNorm3d(out_channels, **norm_args)
