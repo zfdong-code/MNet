@@ -9,7 +9,7 @@ For more information about MNet, please read the following paper （Accepted by 
 
 @misc{<br />
   doi = {10.48550/ARXIV.2205.04846},<br />
-  url = {https://doi.org/10.48550/arxiv.2205.04846},<br />
+  url = { https://doi.org/10.48550/arxiv.2205.04846 },<br />
   author = {Dong, Zhangfu and He, Yuting and Qi, Xiaoming and Chen, Yang and Shu, Huazhong and Coatrieux, Jean-Louis and Yang, Guanyu and Li, Shuo},<br />
   title = {MNet: Rethinking 2D/3D Networks for Anisotropic Medical Image Segmentation},<br />
   publisher = {arXiv},<br />
