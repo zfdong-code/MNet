@@ -17,14 +17,10 @@ For more information about MNet, please read the following paper （Accepted by 
 }
 
 
-
-
-
-
 ## MNet_pure
-Implementations of MNet with MindSpore (https://www.mindspore.cn/) and PyTorch. 
-
-
+Implementations of MNet with Pytorch and MindSpore (https://www.mindspore.cn/). 
+ 
+Although MNet and all the involved networks in our experiments are implemented and tested with Pytorch, we here provide the additional implementation with MindSpore to promote the widespread application of MNet.
 
 ## MNet_inserted_into_nnUNet
 The proposed MNet is trained with nnUNet framework, thus we provide the whole modified nnUNet project. 
@@ -37,6 +33,9 @@ The proposed MNet is trained with nnUNet framework, thus we provide the whole mo
 --Training cmd:
 
 nnUNet_train 3d_fullres **myTrainer** TaskXXX_MYTASK FOLD --npz (see https://github.com/MIC-DKFZ/nnUNet for details)
+
+
+
 
 
 # Dataset
