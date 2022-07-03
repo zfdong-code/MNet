@@ -8,7 +8,7 @@ def FMU(x1, x2, mode='sub'):
     Args:
         x1:
         x2:
-        mode: types of fusion
+        mode: type of fusion
     Returns:
     """
     if mode == 'sum':
