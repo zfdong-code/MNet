@@ -1,3 +1,5 @@
+## News: Code of MNet+ will be open soon! 
+
 # MNet: Rethinking 2D/3D Networks for Anisotropic Medical Image Segmentation
 
 MNet is novel data-independent CNN segmentation architecture, which realizes adaptive 2D and 3D feature fusion to balance inter- and intra-slice representation, thus being robust to varying anisotropic degrees of medical datasets and helping get rid of manual architecture design.
